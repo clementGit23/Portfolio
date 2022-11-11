@@ -19,6 +19,11 @@ p{
     letter-spacing: 0.1rem;
 }
 
+span{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
 input{
         display: inline-block;
         background: none;
@@ -84,6 +89,14 @@ input{
     overflow-x: hidden;
     transition: 0.3s ease;
     overflow-y: scroll;
+}
+
+.result{
+    display: flex;
+}
+
+.margin-right{
+    margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 680px){
