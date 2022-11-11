@@ -36,7 +36,8 @@ document.addEventListener("keyup", function(event) {
         resultDiv.appendChild(BaseLigneDollar);
 
         //Création résultat commande
-        result.innerText = input;
+        let resultatCommande = resultat(input);
+        result.innerText = resultatCommande;
         resultDiv.appendChild(result);
 
         //Affichage du résultat de la commande
@@ -44,3 +45,15 @@ document.addEventListener("keyup", function(event) {
   
     }
 });
+
+function resultat(commande){
+    let resultatCommande;
+    if(commande == "test"){
+        resultatCommande = "Validé !";
+        return resultatCommande;
+    }
+    else{
+        resultatCommande = "Faux !";
+        return resultatCommande;
+    }
+}
